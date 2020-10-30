@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar {
+  background-color: rgba(0,0,0, 0.5);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar .container a,
+.navbar .container .navbar-nav .nav-item .nav-link{
+  color : hsl(218, 58%, 76%);
+}
+
+.blog-hero {
+  height: 70vh !important;
+  background-color: rgb(76, 83, 87);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.blog-hero::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(56, 54, 54, 0.6);
+  width: 0%;
+  height: 50%;
+  z-index: -5;
+}
+
+.blog-hero-inner{
+  position: relative;
+  z-index: 1;
+}
+
+.blog-hero h1{
+  color: rgb(233, 202, 165);
+}
+
+.blog-hero p.lead {
+  font-weight: 700;
+  
+}
+
+.blog-container{
+  max-width: 650;
+}
+
+.blog-card {
+  border-radius: 0px !important ;
+  border-bottom: 0.3px solid #ddd !important;
+}
+
+.blog-card:hover {
+  background-color: #dedede;
+}
+
+.blog-card h2,
+.blog-card h3,
+.blog-card p {
+  color: rgb(233, 202, 165);
+  text-decoration: none !important;
+}
+
+.blog-comment-card {
+  border-radius: 0 !important;
+  border-bottom: 0.3px solid #d3d3d3 !important;
+}
+
+.blog-login, .blog-new-post-page {
+  max-width: width 400px;
+}
+
+.footer {
+  background: linear-gradient( rgb(83, 72, 72), rgb(224, 217, 217));
+  color: whitesmoke;
+  margin-top: 100px;
+}
+
+.jumbotron {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron .container{
+  padding: 40px;
+  background-color: rgba(0,0,0, 0.5);
+  color: #d3d3d3;
 }
