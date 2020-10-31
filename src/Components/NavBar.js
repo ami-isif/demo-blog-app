@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink, useHistory  } from 'react-router-dom';
+import { NavLink,} from 'react-router-dom';
 import { user, logout } from '../controllers/user_controller';
 
 function NavBar() {
 
-  const[loggedIn, setLoggedIn] = useState(user.loggedIn);
-  const history = useHistory();
+  const[, setLoggedIn] = useState(user.loggedIn);
 
   function handleLogout(e) {
     e.preventDefault();
